@@ -1,0 +1,39 @@
+{
+  /* vim */
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.vimrc.enable": true,
+  "vim.vimrc.path": "/home/tanaka/.vimrc",
+  "vim.handleKeys": {
+    "<C-f>": false,
+  },
+  "terminal.integrated.enableMultiLinePasteWarning": false,
+  "python.defaultInterpreterPath": "",
+  "workbench.startupEditor": "none",
+
+
+  /* latex */
+  "latex-workshop.docker.enabled": true,
+  "latex-workshop.docker.image.latex": "rintanakahpc/latex_myself",
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "latex_myself",
+      "tools": [
+        "latex_myself"
+      ]
+    },
+  ],
+  "latex-workshop.latex.tools": [
+    {
+      "name": "latex_myself",
+      "command": "latexmk",
+      "args": [
+        "-r", "/root/.latexmkrc"
+      ],
+      "env": {}
+    },
+  ],
+}
